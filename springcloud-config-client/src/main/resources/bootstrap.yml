@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      name: application     #github中配置文件的前缀
+      profile: test
+      uri:
+      - http://localhost:8888/
+      label: master
+      discovery:
+        service-id: CONFIG-SERVER
